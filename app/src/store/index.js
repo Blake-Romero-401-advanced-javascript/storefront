@@ -1,11 +1,10 @@
 import { createStore, combineReducers } from 'redux';
-
 import { composeWithDevTools } from 'redux-devtools-extension';
 
 //imports reducers
-import counter from './counter';
+import products from './products.js';
 
-let reducers = combineReducers({ counter });
+let reducers = combineReducers({ products });
 
 const store = () => {
   return createStore(reducers, composeWithDevTools());

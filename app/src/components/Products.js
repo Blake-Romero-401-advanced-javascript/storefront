@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { increment, reset } from '../store/counter';
+import { increment, reset } from '../store/products';
 
 const ItemCounter = props => {
   return (
