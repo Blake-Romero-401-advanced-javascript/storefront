@@ -6,7 +6,7 @@ const ItemCounter = props => {
   return (
     <section className="counter">
       <ul>
-        {props.products.map(item => 
+        {props.products.products.map(item => 
           <li onClick={() => props.increment(item.name)} key={item.name}>{item.name} : {item.quantity}</li>
           )}
       </ul>
@@ -17,7 +17,7 @@ const ItemCounter = props => {
 
 const mapStateToProps = (state) => {
   return {
-    products: state.counter.products
+    products: state.products
   }
 }
 

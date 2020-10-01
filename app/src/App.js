@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Categories from './storefront/categories';
 import CurrentCategory from './storefront/current-category';
-import Products from './components/Products';
+import Products from './storefront/Products';
 
 import './App.css';
 
@@ -15,7 +15,7 @@ export default props => {
       <main>
         <Categories />
         <CurrentCategory />
-        {/* <Products /> */}
+        <Products />
       </main>
       <Footer />
     </>
