@@ -17,7 +17,7 @@ const Categories = props => {
   const classes = useStyles();  
   
   return (
-    <div className={classes.categories}>
+    <div className='category'>
       {console.log('props', props)}
       <Typography variant="h5">Browse our Categories</Typography>
       <ButtonGroup variant="text" color="primary" aria-label="text primary button group">
@@ -35,36 +35,10 @@ const Categories = props => {
   );
 }
 
-// const useStyles = makeStyles((theme) => ({
-//   categories: {
-//     margin: theme.spacing(3),
-//   },
-// }));
-
-// const Categories = props => { 
-//   return (
-//     <div className={props.categories}>
-//       {console.log(props)}
-//       <Typography variant="h5">Browse our Categories</Typography>
-//       <ButtonGroup variant="text" color="primary" aria-label="text primary button group">
-//         {props.categories.categories.map(cat =>
-//           <Button
-//             key={cat._id}
-//             color="primary"
-//             onClick={() => props.category(cat.name)}
-//           >
-//             {cat.displayName || cat.name}
-//           </Button>
-//         )}
-//       </ButtonGroup>
-//     </div>
-//   )
-// }
-
 const mapStateToProps = state => {
   return {
     categories: state.products,
-    changeCategory,
+    // changeCategory,
   }
 }
 

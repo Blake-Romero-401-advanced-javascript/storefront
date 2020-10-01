@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Categories from './storefront/categories';
 import CurrentCategory from './storefront/current-category';
 import Products from './storefront/Products';
+import ShoppingCart from './storefront/SimpleCart';
 
 import './App.css';
 
@@ -12,6 +13,7 @@ export default props => {
     <>
       {/* <CssBaseline /> */}
       <Header />
+      <ShoppingCart />
       <main>
         <Categories />
         <CurrentCategory />
